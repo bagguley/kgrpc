@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "bagguley.kotlingrpc";
+option java_outer_classname = "CountProto";
+
+package count;
+
+service Counter {
+  rpc Count (CountRequest) returns (CountReply) {}
+}
+
+message CountRequest {
+}
+
+message CountReply {
+  int64 count = 1;
+}

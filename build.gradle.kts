@@ -55,6 +55,12 @@ tasks.register<JavaExec>("CountServer") {
     mainClass.set("bagguley.kotlingrpc.CountServerKt")
 }
 
+tasks.register<JavaExec>("CountClient") {
+    dependsOn("classes")
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass.set("bagguley.kotlingrpc.CountClientKt")
+}
+
 protobuf {
     protoc {
         artifact = "com.google.protobuf:protoc:${protobufVersion}"

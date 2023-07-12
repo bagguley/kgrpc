@@ -6,7 +6,7 @@ Use this as a starting point for your project or just to learn the basics.
 `./gradlew build`
 
 ## running the server
-`./gradlew CountServer`
+`./gradlew server`
 
 ## running the client
-`./gradlew CountClient`
+`./gradlew client`

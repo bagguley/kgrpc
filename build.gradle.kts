@@ -49,13 +49,13 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "17"
 }
 
-tasks.register<JavaExec>("CountServer") {
+tasks.register<JavaExec>("server") {
     dependsOn("classes")
     classpath = sourceSets["main"].runtimeClasspath
     mainClass.set("bagguley.kotlingrpc.CountServerKt")
 }
 
-tasks.register<JavaExec>("CountClient") {
+tasks.register<JavaExec>("client") {
     dependsOn("classes")
     classpath = sourceSets["main"].runtimeClasspath
     mainClass.set("bagguley.kotlingrpc.CountClientKt")

@@ -26,7 +26,7 @@ dependencies {
 
     runtimeOnly("io.grpc:grpc-netty:${grpcVersion}")
 
-    testImplementation(kotlin("test"))
+    testImplementation(kotlin("test", "1.8.10"))
 }
 
 kotlin {
@@ -36,7 +36,7 @@ kotlin {
 sourceSets {
     main {
         kotlin {
-            srcDir("${project.buildDir}/generated/source/proto/main/grpckt")
+            srcDir(project.layout.buildDirectory.dir("generated/source/proto/main/grpckt"))
         }
     }
 }

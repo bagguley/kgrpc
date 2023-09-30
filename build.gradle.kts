@@ -1,18 +1,18 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.9.0"
-    id("com.google.protobuf") version "0.9.3"
-    id("com.github.ben-manes.versions") version "0.47.0"
+    kotlin("jvm") version "1.9.10"
+    id("com.google.protobuf") version "0.9.4"
+    id("com.github.ben-manes.versions") version "0.48.0"
 }
 
 group = "bagguley.kotlingrpc"
 version = "1.0-SNAPSHOT"
 
-val grpcVersion = "1.56.1"
-val protobufVersion = "3.23.4"
-val kotlinGrpcVersion = "1.3.0"
-val coroutinesVersion = "1.7.2"
+val grpcVersion = "1.58.0"
+val protobufVersion = "3.24.3"
+val kotlinGrpcVersion = "1.4.0"
+val coroutinesVersion = "1.7.3"
 
 repositories {
     mavenCentral()

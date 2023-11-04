@@ -1,16 +1,16 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.9.10"
+    kotlin("jvm") version "1.9.20"
     id("com.google.protobuf") version "0.9.4"
-    id("com.github.ben-manes.versions") version "0.48.0"
+    id("com.github.ben-manes.versions") version "0.49.0"
 }
 
 group = "bagguley.kotlingrpc"
 version = "1.0-SNAPSHOT"
 
-val grpcVersion = "1.58.0"
-val protobufVersion = "3.24.3"
+val grpcVersion = "1.59.0"
+val protobufVersion = "3.25.0"
 val kotlinGrpcVersion = "1.4.0"
 val coroutinesVersion = "1.7.3"
 
